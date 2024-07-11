@@ -5,35 +5,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Remark = void 0;
-var typeorm_1 = require("typeorm");
-var Remark = /** @class */ (function () {
-    function Remark() {
-    }
-    __decorate([
-        typeorm_1.PrimaryGeneratedColumn(),
-        __metadata("design:type", Number)
-    ], Remark.prototype, "id", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", Number)
-    ], Remark.prototype, "user_id", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", Number)
-    ], Remark.prototype, "review_id", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", Boolean)
-    ], Remark.prototype, "helpful", void 0);
-    Remark = __decorate([
-        typeorm_1.Entity()
-    ], Remark);
-    return Remark;
-}());
+const typeorm_1 = require("typeorm");
+let Remark = class Remark {
+};
+__decorate([
+    typeorm_1.PrimaryGeneratedColumn()
+], Remark.prototype, "id", void 0);
+__decorate([
+    typeorm_1.Column()
+], Remark.prototype, "user_id", void 0);
+__decorate([
+    typeorm_1.Column()
+], Remark.prototype, "review_id", void 0);
+__decorate([
+    typeorm_1.Column()
+], Remark.prototype, "helpful", void 0);
+Remark = __decorate([
+    typeorm_1.Entity()
+], Remark);
 exports.Remark = Remark;
 //# sourceMappingURL=Remark.js.map

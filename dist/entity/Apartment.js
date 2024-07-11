@@ -5,39 +5,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Apartment = void 0;
-var typeorm_1 = require("typeorm");
-var Apartment = /** @class */ (function () {
-    function Apartment() {
-    }
-    __decorate([
-        typeorm_1.PrimaryGeneratedColumn(),
-        __metadata("design:type", Number)
-    ], Apartment.prototype, "id", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Apartment.prototype, "name", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Apartment.prototype, "address", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", Number)
-    ], Apartment.prototype, "landlord_id", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Apartment.prototype, "amenities", void 0);
-    Apartment = __decorate([
-        typeorm_1.Entity()
-    ], Apartment);
-    return Apartment;
-}());
+const typeorm_1 = require("typeorm");
+let Apartment = class Apartment {
+};
+__decorate([
+    typeorm_1.PrimaryGeneratedColumn()
+], Apartment.prototype, "id", void 0);
+__decorate([
+    typeorm_1.Column()
+], Apartment.prototype, "name", void 0);
+__decorate([
+    typeorm_1.Column()
+], Apartment.prototype, "address", void 0);
+__decorate([
+    typeorm_1.Column()
+], Apartment.prototype, "landlord_id", void 0);
+__decorate([
+    typeorm_1.Column()
+], Apartment.prototype, "amenities", void 0);
+Apartment = __decorate([
+    typeorm_1.Entity()
+], Apartment);
 exports.Apartment = Apartment;
 //# sourceMappingURL=Apartment.js.map

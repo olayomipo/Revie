@@ -1,17 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // src/routes/user.routes.ts
-var express_1 = require("express");
-var user_1 = require("../controller/user");
-var userRouter = express_1.Router();
-var express_validator_1 = require("express-validator");
-var createValidator = [
+const express_1 = require("express");
+const user_1 = require("../controller/user");
+const userRouter = express_1.Router();
+const express_validator_1 = require("express-validator");
+const createValidator = [
     express_validator_1.body('username', 'username does not Empty').not().isEmpty(),
     express_validator_1.body('email', 'Invalid email').isEmail(),
     express_validator_1.body('password', 'password does not Empty').not().isEmpty(),
     express_validator_1.body('password', 'The minimum password length is 6 characters').isLength({ min: 6 }),
 ];
-var loginValidator = [
+const loginValidator = [
     express_validator_1.body('email', 'Invalid email').isEmail(),
     express_validator_1.body('password', 'password does not Empty').not().isEmpty(),
 ];
