@@ -17,7 +17,7 @@ Welcome to the documentation for your fantastic API! Below, you'll find details 
   "email": "john@example.com",
   "password": "secure_password"
 }
-
+```
 ### Response (Success)
 
 
@@ -27,3 +27,4 @@ Welcome to the documentation for your fantastic API! Below, you'll find details 
   "message": "User registered successfully",
   "user_id": 123
 }
+```
