@@ -1,7 +1,7 @@
 
 # Revie API Documentation
 
-Welcome to the documentation for your fantastic API! Below, you'll find details about the available endpoints, request methods, and response formats.
+Welcome to the documentation for your Revie API! Below, you'll find details about the available endpoints, request methods, and response formats.
 
 ## User Registration
 
