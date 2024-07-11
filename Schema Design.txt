@@ -1,0 +1,27 @@
+Schema Design:
+For the schema, we’ll need tables/entities to represent users, apartments, reviews, and helpful marks. 
+
+Here’s a simplified example:
+
+User: id, 
+      username, 
+      email, 
+      password_hash, etc.
+      
+Apartment:  id,
+            name, 
+            address,
+            landlord_id,
+            amenities,
+            etc.
+Review: id,
+        user_id,
+        apartment_id,
+        rating,
+        comment,
+        media_url,
+        etc.
+HelpfulMark:id,
+            review_id,
+            user_id,
+            helpful (boolean)
