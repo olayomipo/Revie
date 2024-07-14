@@ -6,12 +6,12 @@ Here’s a simplified example:
 User: id, 
       username, 
       email, 
-      password_hash, etc.
+      password (hash)
       
 Apartment:  id,
             name, 
             address,
-            landlord_id,
+            contact,
             amenities,
             etc.
 Review: id,
@@ -20,7 +20,7 @@ Review: id,
         rating,
         comment,
         media_url,
-        etc.
+
 HelpfulMark:id,
             review_id,
             user_id,
