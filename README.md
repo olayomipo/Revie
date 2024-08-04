@@ -3,6 +3,9 @@
 
 Welcome to the documentation for your Revie API! Below, you'll find details about the available endpoints, request methods, and response formats.
 
+Hosted using Render at [click here](https://revie-ygqb.onrender.com)
+Feel free to test enjoy
+
 ## User
 
 
