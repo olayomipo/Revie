@@ -5,6 +5,27 @@ Welcome to the documentation for your Revie API! Below, you'll find details abou
 
 ## User
 
+
+### User Fetch
+
+#### Endpoint
+
+`GET /user`
+
+#### Request 201
+
+```JSON
+[
+    {
+        "id": 1,
+        "username": "User1",
+        "email": "user1@gmail.com",
+        "password": "helloworld"
+    }
+]
+```
+
+
 ### User Registration
 
 #### Endpoint
